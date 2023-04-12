@@ -1,0 +1,15 @@
+.carrito{
+    display: flex;
+    margin-right: 25px;
+    align-items: center;
+}
+.img-carrito{
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+.carrito > p{
+    color: white;
+    margin: 0 auto;
+    font-size: 25px;
+}
