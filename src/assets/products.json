@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "marca": "Peugeot",
+        "modelo": 208,
+        "Año": 2023,
+        "Combustible": "Nafta"
+    },
+    {
+        "id": 2,
+        "marca": "Peugeot",
+        "modelo": 3008,
+        "Año": 2023,
+        "Combustible": "Nafta"
+    },
+    {
+        "id": 3,
+        "marca": "Mercedes Benz",
+        "modelo": "AMG SL",
+        "Año": 2023,
+        "Combustible": "Nafta"
+    },
+    {
+        "id": 4,
+        "marca": "Mercedes Benz",
+        "modelo": "AMG GLA",
+        "Año": 2023,
+        "Combustible": "Nafta"
+    },
+    {
+        "id": 5,
+        "marca": "BMW",
+        "modelo": "Serie 3",
+        "Año": 2023,
+        "Combustible": "Hibrido"
+    },  
+    {
+        "id": 6,
+        "marca": "Tesla",
+        "modelo": "S",
+        "Año": 2023,
+        "Combustible": "Electrico"
+    },
+    {
+        "id": 7,
+        "marca": "Tesla",
+        "modelo": "X",
+        "Año": 2023,
+        "Combustible": "Electrico"
+    }
+
+]

@@ -9,9 +9,9 @@ const NavbarComponent = () => {
    return(
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">Scuba Divers Uruguay</Navbar.Brand>
+          <Navbar.Brand href="#home">Tu Pilcha</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home" className='navLinks'>Inicio</Nav.Link>
+            <Nav.Link href="#home" className='navLinks'></Nav.Link>
             <Nav.Link href="#features" className='navLinks'>Cursos</Nav.Link>
             <Nav.Link href="#pricing" className='navLinks'>Viajes</Nav.Link>
           </Nav>
