@@ -11,9 +11,9 @@ const NavbarComponent = () => {
         <Container>
           <Navbar.Brand href="#home">Tu Pilcha</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home" className='navLinks'></Nav.Link>
-            <Nav.Link href="#features" className='navLinks'>Cursos</Nav.Link>
-            <Nav.Link href="#pricing" className='navLinks'>Viajes</Nav.Link>
+            <Nav.Link href="#home" className='navLinks'>Remeras</Nav.Link>
+            <Nav.Link href="#features" className='navLinks'>Hoodies</Nav.Link>
+            <Nav.Link href="#pricing" className='navLinks'>Pantalones</Nav.Link>
           </Nav>
         </Container>
         <CartWidget />
