@@ -1,3 +1,5 @@
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 import './ItemCount.css'
 import { useState } from 'react'
 
@@ -18,14 +20,16 @@ const ItemCount = ({stock, inicial, onAdd}) => {
 
     return(
         <div className='contador'>
-            <div className='botones'>
-                <button className='boton' onClick={decremento}>-1</button>
-                <h3 className='Total'>{cantidad}</h3>
-                <button className='boton' onClick={incremento}>+1</button>
-            </div>
-            <div>
-                <button className='boton' onClick={() => onAdd(cantidad)} disabled={!stock} >Agregar al carrito</button>
-            </div>
+            <Card>
+            <Card.Body>
+                <Card.Title>Total: {cantidad} </Card.Title>
+                <div className='botones'>
+                    <Button variant="primary" className='btn'   onClick={decremento}>-1</Button>
+                    <Button variant="primary" className='btn'  onClick={() => onAdd(cantidad)} disabled={!stock} >Agregar al carrito</Button>
+                    <Button variant="primary" className='btn'  onClick={incremento}>+1</Button>
+                </div>
+            </Card.Body>
+            </Card>            
         </div>
     )
 }

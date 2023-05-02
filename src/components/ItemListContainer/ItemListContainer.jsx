@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { obtenerProductos } from "../../assets/productos/products"
 import ItemList from "../ItemList/ItemList"
+import './ItemListContainer.css'
 
 const ItemListContainer = ( {saludo} ) => {
     const [productos, setProductos] = useState([])
@@ -16,7 +17,7 @@ const ItemListContainer = ( {saludo} ) => {
     }, [])
 
     return(
-        <div>
+        <div className="contenedorProductos">
             <h1>{saludo}</h1>
             <ItemList productos={productos}/>
             

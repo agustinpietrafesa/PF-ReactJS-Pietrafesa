@@ -2,8 +2,9 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { getProductById } from "../../assets/productos/products";
 import ItemDetail from "../ItemDetail/ItemDetail";
+import './ItemDetailContainer.css'
 
-const itemDetailContainer = () => {
+const ItemDetailContainer = () => {
     const [producto, setProducto] = useState(null)
 
     useEffect(() => {
@@ -23,3 +24,6 @@ const itemDetailContainer = () => {
     )
 
 }
+
+export default ItemDetailContainer
+
