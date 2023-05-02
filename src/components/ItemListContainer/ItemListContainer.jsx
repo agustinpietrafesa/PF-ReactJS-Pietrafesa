@@ -1,20 +1,25 @@
 import { useEffect, useState } from "react"
-import { obtenerProductos } from "../../assets/productos/products"
+import {getProductsByCategory, obtenerProductos } from "../../assets/productos/products"
 import ItemList from "../ItemList/ItemList"
 import './ItemListContainer.css'
+import { useParams } from "react-router-dom"
 
 const ItemListContainer = ( {saludo} ) => {
     const [productos, setProductos] = useState([])
 
+    const { categoryId } = useParams()
+
     useEffect(() => {
-        obtenerProductos()
+        const asyncFunc = categoryId ? getProductsByCategory : obtenerProductos
+        
+        asyncFunc(categoryId)
             .then(response => {
                 setProductos(response)
             })
             .catch(error => {
                 console.error(error)
             })
-    }, [])
+    }, [categoryId])
 
     return(
         <div className="contenedorProductos">
@@ -28,3 +33,12 @@ const ItemListContainer = ( {saludo} ) => {
 export default ItemListContainer
 
 
+// useEffect(() => {
+//     obtenerProductos()
+//         .then(response => {
+//             setProductos(response)
+//         })
+//         .catch(error => {
+//             console.error(error)
+//         })
+// }, [])

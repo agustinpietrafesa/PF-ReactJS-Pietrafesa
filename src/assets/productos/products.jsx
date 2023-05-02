@@ -1,7 +1,7 @@
 const productos = 
 [
     {
-        id: 1,
+        id: '1',
         img: 'https://f.fcdn.app/imgs/fd9887/www.zooko.com.uy/zoo/2adf/original/catalogo/NKDR7803-100-1/1920-1200/remera-nike-sportswear-air-white.jpg',
         prenda: "Remera",
         detalle: "Remera Nike Air-White",
@@ -11,7 +11,7 @@ const productos =
         stock: "10"
     },
     {
-        id: 2,
+        id: '2',
         img: 'https://www.moov.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dw5ecb2f19/products/NI_DM6337-010/NI_DM6337-010-2.JPG',
         prenda: "Remera",
         detalle: "Remera Nike Air-Black",
@@ -21,7 +21,7 @@ const productos =
         stock: "10"
     },
     {
-        id: 3,
+        id: '3',
         img: 'https://www.moov.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dw82acf439/products/NI_DM6337-010/NI_DM6337-010-1.JPG',
         prenda: "Remera",
         detalle: "Remera NIke Air Moov",
@@ -31,7 +31,7 @@ const productos =
         stock: "10"
     },
     {
-        id: 4,
+        id: '4',
         img: 'https://thn.pe/media/catalog/product/cache/2/image/1200x/040ec09b1e35df139433887a97daa66f/b/v/bv2762-063.jpg',
         prenda: "Pantalón",
         detalle: "Pantalón Nike Club Jggr Grey",
@@ -41,7 +41,7 @@ const productos =
         stock: "5"
     },
     {
-        id: 5,
+        id: '5',
         img: 'https://www.triathlon.com.pe/media/catalog/product/cache/1/image/1200x/040ec09b1e35df139433887a97daa66f/base/BV2762-010.jpg',
         prenda: "Pantalón",
         detalle: "Pantalón Nike Club Jggr Black",
@@ -51,7 +51,7 @@ const productos =
         stock: "5"
     },
     {
-        id: 6,
+        id: '6',
         img: 'https://www.innovasport.com/medias/IS-HR6611-1.jpg?context=bWFzdGVyfGltYWdlc3w3MTY1NXxpbWFnZS9qcGVnfGltYWdlcy9oNjEvaDg5LzExNjYwNzczOTQ5NDcwLmpwZ3xhNmRmZTE4MjhiODAyMWQxMzYyNDZmMTI4OThjZTdkMjdkY2EzOWQ3ZDAwMDg5ZGVhNjllN2MxZDk5MjllNmZh',
         prenda: "Pantalón",
         detalle: "Pantalón Adidas Astro Black",
@@ -61,7 +61,7 @@ const productos =
         stock: "10"
     },
     {
-        id: 7,
+        id: '7',
         img: 'https://cdn.shopify.com/s/files/1/0443/6203/9458/products/ventiapp-image--4fd1222b-e2ee-4dd2-9414-4601442e0e2c_5_11_2022_15_8_38_883.png?v=1667682768',
         prenda: "Hoodie",
         detalle: "Hoodie Adidas Essentials Black",
@@ -71,7 +71,7 @@ const productos =
         stock: "10"
     },
     {
-        id: 8,
+        id: '8',
         img: 'https://photos6.spartoo.es/photos/175/17531648/17531648_1200_A.jpg',
         prenda: "Hoodie",
         detalle: "Hoodie Adidas Trefoil Grey",
@@ -81,7 +81,7 @@ const productos =
         stock: "10"
     },
     {
-        id: 9,
+        id: '9',
         img: 'https://f.fcdn.app/imgs/2074a9/www.zooko.com.uy/zoo/9866/original/catalogo/NKDM6059-321-1/1920-1200/buzo-nike-air-fleece-hoddie-321.jpg',
         prenda: "Hoodie",
         detalle: "Hoodie NIke Air Fleece",
@@ -107,6 +107,15 @@ export const getProductById = (productoId) => {
         }, 500)
     })
 }
+
+export const getProductsByCategory = (categoryId) => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(productos.filter(producto => producto.prenda === categoryId))
+        })
+    })
+}
+
 
 
 
