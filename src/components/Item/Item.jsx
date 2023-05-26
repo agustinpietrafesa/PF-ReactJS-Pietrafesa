@@ -7,7 +7,7 @@ const Item = ({id, img, prenda, detalle, marca, precio, talle}) => {
     return(
         <div>
           <Card className='tarjetas'>
-            <Card.Img variant="top" src={img} />
+            <Card.Img variant="top" className='imgTarjeta' src={img} />
             <Card.Body>
               <Card.Title>{detalle} </Card.Title>
               <Card.Text>

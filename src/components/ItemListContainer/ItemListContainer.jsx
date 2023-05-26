@@ -31,14 +31,3 @@ const ItemListContainer = ( {saludo} ) => {
 }
 
 export default ItemListContainer
-
-
-// useEffect(() => {
-//     obtenerProductos()
-//         .then(response => {
-//             setProductos(response)
-//         })
-//         .catch(error => {
-//             console.error(error)
-//         })
-// }, [])

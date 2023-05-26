@@ -32,7 +32,7 @@ const productos =
     },
     {
         id: '4',
-        img: 'https://thn.pe/media/catalog/product/cache/2/image/1200x/040ec09b1e35df139433887a97daa66f/b/v/bv2762-063.jpg',
+        img: 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/abc8ee3f-f2b1-4973-917c-979dcf556711/sportswear-tech-fleece-pantalon-nino-FBtClX.png',
         prenda: "Pantalón",
         detalle: "Pantalón Nike Club Jggr Grey",
         marca: "NIKE",
@@ -42,7 +42,7 @@ const productos =
     },
     {
         id: '5',
-        img: 'https://www.triathlon.com.pe/media/catalog/product/cache/1/image/1200x/040ec09b1e35df139433887a97daa66f/base/BV2762-010.jpg',
+        img: 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/jqebqprdqla2jhwgtddl/sportswear-club-fleece-jogger-4Pm2Zz.png',
         prenda: "Pantalón",
         detalle: "Pantalón Nike Club Jggr Black",
         marca: "NIKE",
