@@ -16,7 +16,7 @@ export const CartItem = ( { id, detalle, img, cantidad, precio } ) => {
                 <h2>{detalle}</h2>
             </header>
             <picture className='CartImg'>
-                <img src={img} alt="img"/>
+                <img className="cartItemImg" src={img} alt="detalle"/>
             </picture>
             <div>
                 <p>Cantidad: {cantidad}</p>
@@ -25,9 +25,9 @@ export const CartItem = ( { id, detalle, img, cantidad, precio } ) => {
 
                 <p>Subtotal: ${cantidad * precio}</p>
             </div>
-            <footer>
+            <div>
                 <button className='ButtonDelete' onClick={ () => eliminarItem(id) }>X</button>
-            </footer>
+            </div>
         </section>
     )
 }

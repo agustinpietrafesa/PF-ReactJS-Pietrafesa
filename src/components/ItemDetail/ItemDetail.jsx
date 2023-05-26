@@ -17,7 +17,7 @@ const ItemDetail = ({ id, img, prenda, detalle, marca, precio, talle, stock}) =>
     setCantidadAgregada(cantidad)
 
     const item = {
-      id, detalle, precio
+      id, detalle, precio, img
     }
 
     agregarItem(item, cantidad)
@@ -26,12 +26,12 @@ const ItemDetail = ({ id, img, prenda, detalle, marca, precio, talle, stock}) =>
     return (
         <div>
         <Card className='tarjetasDetail'>
-          <Card.Img variant="top" src={img} />
+          <Card.Img  className='ImgDetail' variant="top" src={img} />
           <Card.Body>
             <Card.Title>{detalle} </Card.Title>
             <Card.Text>
-                <h3>Talle {talle} </h3>
-                <h5>Precio ${precio} </h5>
+                <h4>Precio ${precio} </h4>
+                <h5>Talle {talle} </h5>
                 <h6>Disponibles: {stock} </h6>
             </Card.Text>
            <footer>
