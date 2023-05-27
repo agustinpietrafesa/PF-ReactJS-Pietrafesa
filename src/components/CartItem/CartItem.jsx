@@ -1,6 +1,7 @@
 import { useContext } from "react"
 import { CartContext } from "../Context/CartContext"
 import './CartItem.css'
+import Button from 'react-bootstrap/Button';
 
 
 
@@ -11,22 +12,20 @@ export const CartItem = ( { id, detalle, img, cantidad, precio } ) => {
 
 
     return (
-        <section >
-            <header>
-                <h2>{detalle}</h2>
-            </header>
+        <section className="carritoItem" >
             <picture className='CartImg'>
                 <img className="cartItemImg" src={img} alt="detalle"/>
             </picture>
-            <div>
+            <div className="datosItems">
+                <h2>{detalle}</h2>
                 <p>Cantidad: {cantidad}</p>
 
                 <p>Precio unitario: ${precio}</p>
 
                 <p>Subtotal: ${cantidad * precio}</p>
             </div>
-            <div>
-                <button className='ButtonDelete' onClick={ () => eliminarItem(id) }>X</button>
+            <div className="btnEliminarItem">
+                 <Button variant="danger"  onClick={ () => eliminarItem(id) }>X</Button>
             </div>
         </section>
     )

@@ -17,11 +17,11 @@ const NavbarComponent = () => {
             </Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link as={Link} to={`/category/Remera`} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'} >Remeras</Nav.Link>
-            <Nav.Link as={Link} to={`/category/Pantalón`} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'} >Hoodies</Nav.Link>
-            <Nav.Link as={Link} to={`/category/Hoodie`} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'} >Pantalones</Nav.Link>
+            <Nav.Link as={Link} to={`/category/Pantalón`} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'} >Pantalones</Nav.Link>
+            <Nav.Link as={Link} to={`/category/Hoodie`} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'} >Hoodies</Nav.Link>
           </Nav>
-        </Container>
         <CartWidget />
+        </Container>
       </Navbar>
     )
 }

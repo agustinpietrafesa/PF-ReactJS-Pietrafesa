@@ -1,0 +1,19 @@
+.Form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Input{
+    display: flex;
+    justify-content: center;
+    width: 350px;
+}
+.btnForm{
+    background-color: green;
+}
+.btnForm:hover{
+    background-color: gold;
+    height: 50px;
+    width: 150px;
+}

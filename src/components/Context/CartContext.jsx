@@ -8,14 +8,16 @@ export const CartContext = createContext({
 export const CartProvider = ({ children }) => {
     const [carrito, setCarrito] = useState([])
 
-    console.log(carrito)
+
 
     const agregarItem = (item, cantidad) => {
-        (!isInCart(item.id)) 
-        ? 
-        (setCarrito(prev => [...prev, {...item, cantidad}]))
-        :
-        (console.error('El producto ya fue agregado'))
+        if(!isInCart(item.id)) {
+            setCarrito(prev => [...prev, {...item, cantidad}])
+        } else {
+            setCarrito(carrito.map(prod => {
+                return prod.id === item.id ? {...prod, cantidad: prod.cantidad + cantidad} : prod
+            }))
+        }
     }
 
     const eliminarItem = (itemId) => {
@@ -25,6 +27,7 @@ export const CartProvider = ({ children }) => {
 
     const vaciarCarrito = () => {
         setCarrito([])
+
     }
 
     const isInCart = (itemId) => {
@@ -32,11 +35,11 @@ export const CartProvider = ({ children }) => {
     }
 
     const total = () => {
-        return carrito.reduce((prev, act) => prev + act.carrito * act.precio, 0);
+        return carrito.reduce((prev, act) => prev + act.cantidad * act.precio, 0);
     }
 
     const cantidadTotal = () => {
-        return carrito.reduce((acu, productoActual) => acu + productoActual.carrito, 0);
+        return carrito.reduce((acu, productoActual) => acu + productoActual.cantidad, 0);
     }
 
     
