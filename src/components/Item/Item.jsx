@@ -12,7 +12,12 @@ const Item = ({id, img, prenda, detalle, marca, precio, talle}) => {
               <Card.Text>
                   Talle {talle} 
               </Card.Text>
-                <Link to={`/producto/${id}`} className='BtnVerMas'>Ver más</Link>
+
+                <Link to={`/producto/${id}`} >                  
+                    <button className='BtnVerMas'>
+                      Ver más
+                    </button>                  
+                  </Link>
             </Card.Body>
           </Card>
         </div>
