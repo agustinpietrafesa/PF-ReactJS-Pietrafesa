@@ -11,7 +11,7 @@ const NavbarComponent = () => {
       <Navbar bg="dark" variant="dark">
         <Container>
           <Navbar.Brand>
-              <Link to={'/'}>
+              <Link to={'/'} className='logo'>
               Tu Pilcha
               </Link>
             </Navbar.Brand>

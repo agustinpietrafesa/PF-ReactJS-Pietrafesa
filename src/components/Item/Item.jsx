@@ -10,7 +10,7 @@ const Item = ({id, img, prenda, detalle, marca, precio, talle}) => {
             <Card.Body>
               <Card.Title>{detalle} </Card.Title>
               <Card.Text>
-                  <h3>Talle {talle} </h3>
+                  Talle {talle} 
               </Card.Text>
                 <Link to={`/producto/${id}`} className='BtnVerMas'>Ver más</Link>
             </Card.Body>

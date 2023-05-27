@@ -1,7 +1,7 @@
 .tarjetasDetail{
     width: 400px;
     margin: 20px;
-    height: 700px;
+    height: 300px;
 }
 .btnFinalizarCompra{
     background-color: #0d6efd;
@@ -11,8 +11,21 @@
     height: 50px;
     border-radius: 5px;
     padding: 15px;
-    margin-top: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.btnFinalizarCompra:hover{
+    color: white;
+    background-color: blue;
 }
 .ImgDetail{
     height: 350px;
+}
+.infoProd{
+    margin: 2px;
+}
+.footerDetail{
+    height: 80px;
+    position: relative;
 }

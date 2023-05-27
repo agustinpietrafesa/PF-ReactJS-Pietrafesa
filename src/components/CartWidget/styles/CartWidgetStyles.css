@@ -13,3 +13,10 @@
     margin: 0 auto;
     font-size: 25px;
 }
+.numCarrito{
+    margin: 3px;
+    color: white;
+}
+.CartWidget{
+    text-decoration: none;
+}
